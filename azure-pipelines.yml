@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- bash: echo $(Build.SourcesDirectory)
+- bash: echo Build.SourcesDirectory = $(Build.SourcesDirectory)
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
